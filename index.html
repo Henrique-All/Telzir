@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewpot" content="width=device-width, initial-scale=1.0">
+    <title>Telzir</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/select.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/site.webmanifest">
+</head>
+<body>
+    <div class="back" id="qunit-testrunner-toolbar">
+        <h1 class="header" id="qunit-header">Fale Mais com Telzir</h1>
+        <div class="end" id="qunit-fixture">
+            <p class="plano">
+                Escolha um plano:
+            </p>
+                <select name="Plano" id="plano">
+                    <option value="none" selected disabled hidden>Planos</option>
+                    <option value="30">FaleMais 30</option>
+                    <option value="60">FaleMais 60</option>
+                    <option value="120">FaleMais 120</option>
+                 </select>
+            </p>
+            <p class="tarifa">
+                Selecione o DDD:
+            </p>
+                <select name="DDD" id="tarifa">
+                    <option value="none" selected disabled hidden>DDD</option>
+                    <option value="1.90">011 para 016</option>
+                    <option value="2.90">016 para 011</option>
+                    <option value="1.70">011 para 017</option>
+                    <option value="2.70">017 para 011</option>
+                    <option value="0.90">011 para 018</option>
+                    <option value="1.90">018 para 011</option>
+                 </select>
+
+             </p>
+             <p class="chamada">
+                Duração da chamada:
+            </p>
+                <input type="number" id="minutos" placeholder="Minutos"> 
+             </p>
+             <button onclick="submit()" class="botao">Calcular</button>
+            <p id="resultado"></p>
+            <p id="semPlano"></p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+</body>
+<script src="./assets/js/Index.js"></script>
+</html>
+

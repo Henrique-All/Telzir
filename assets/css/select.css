@@ -1,0 +1,67 @@
+#plano::-ms-expand {
+    display: none;
+}
+
+#plano {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    border-radius: 15px 0 15px;
+    overflow: hidden;
+}
+
+#plano::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    transition: .5s all ease;
+    pointer-events: none;
+}
+
+#plano {
+    border: 0px;
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    margin: 0px auto;
+    font-size: 15px;
+    flex: 1;
+    padding: 0 1em;
+    cursor: pointer;
+}
+
+#plano:hover::after {
+    color: #f39c12;
+}
+
+#plano::-ms-expand {
+    display: none;
+}
+
+#tarifa::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #DBF5F0;
+    transition: .25s all ease;
+    pointer-events: none;
+}
+
+#tarifa {
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    font-size: 15px;
+    border: 0;
+    padding: 0 1em;
+    cursor: pointer;
+    border-radius: 15px 0 15px;}
+
+#tarifa:hover::after {
+    color: #f39c12;
+}
